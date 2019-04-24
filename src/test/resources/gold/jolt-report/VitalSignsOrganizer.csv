@@ -1,0 +1,2 @@
+CCDA Source,Target,Link,Format,Condition 1
+organizer.component[],Observation[],Observation,,organizer.nullFlavor isnull

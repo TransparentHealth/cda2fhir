@@ -1,0 +1,33 @@
+[
+	{
+		"operation": "cardinality",
+		"spec": {
+			"organizer": {
+				"component": "MANY"
+			}
+		}
+	},
+	{
+		"operation": "tr.com.srdc.cda2fhir.jolt.RemoveWhen",
+		"spec": {
+			"organizer": {
+				"nullFlavor": "*"
+			}
+		}
+	},
+	{
+		"operation": "shift",
+		"spec": {
+			"organizer": {
+				"component": {
+					"*": "Observation[&].->Observation"
+				}
+			}
+		}
+	},
+	{
+		"operation": "tr.com.srdc.cda2fhir.jolt.Substitute",
+		"spec": {
+		}
+	}
+]
